@@ -19,3 +19,23 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index') ->name('index');
 Route::get('/info-contacto', 'HomeController@detalle')->name('detalle');
+
+//Create/crear
+//Route::post();
+
+//REad/leer
+//Route::get();
+
+//Update/actualizar
+//Route::put();
+
+//Delete/borrar
+//Route::delete();
+
+Route::resource('/blog','PostController');
+/*
+blog.index
+blog.create
+blog.show
+blog.destroy
+*/
